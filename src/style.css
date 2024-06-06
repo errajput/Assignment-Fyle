@@ -1,13 +1,13 @@
 body {
-    margin: 0;
-    background-color: red;
+    margin: 0%;
+    padding: 0%;
+    /* background-color: red; */
 }
 * {
     box-sizing: border-box;
 }
-.containerHero {
-    font-family: "Cormorant SC";
-    background-color: #dfa0a0;
+
+.container-hero {
     display: flex;
     align-items: center;
     height: 100vh;
@@ -15,112 +15,332 @@ body {
     margin: auto;
 }
 
-.hero {
-    width: 18rem;
-    height: 30rem;
-    background: transparent url("assets/hero.png") 0% 0% no-repeat padding-box;
+.container-hero .text {
+    /* background-color: gray; */
+    height: 24rem;
 }
 
-h3 {
-    width: 251px;
-    height: 30px;
-    font: normal normal 550 25px/90px "Cormorant SC";
-    letter-spacing: 0px;
+/* Left */
+.container-hero h3 {
+    font: normal normal normal 28px "Anek Devanagari";
     color: #ff3147;
     text-transform: uppercase;
+    margin: 0 0 10px 0;
 }
-h1 {
-    width: 614px;
-    height: 140px;
-    font: normal normal bold 50px/80px Cormorant SC;
+.container-hero h1 {
+    font: normal normal 600 50px/60px "Anek Devanagari";
+    color: #000000;
+    text-transform: uppercase;
+    margin: 0;
+}
+.container-hero p {
+    text-align: left;
+    font: normal normal normal 14px "Poppins";
+    color: #000000;
+    margin: 40px 0 53px 0;
+}
+
+.container-hero button {
+    width: 130px;
+    height: 40px;
+    background-color: #ff3147;
+    border-radius: 2px;
+    border: none;
+    color: white;
+    font-size: 12px;
+    font-family: "Poppins";
+    font-weight: 500;
+}
+
+/* Right */
+.container-hero img {
+    /* background: transparent 0% 0% no-repeat padding-box; */
+    width: 23.438rem;
+}
+/* next page */
+.container-Do {
+    top: 937px;
+    left: -4px;
+    width: 1920px;
+    height: 1030px;
+
+    background: #fafafa 0% 0% no-repeat padding-box;
+}
+.container-Do h3 {
+    font: normal normal 600 24px/26px Anek Devanagari;
+    letter-spacing: 0px;
+    color: #ff3147;
+    opacity: 1;
+    margin-left: 20%;
+}
+.provider h1 {
+    top: 1101px;
+    left: 373px;
+    width: 442px;
+    height: 110px;
+    text-align: left;
+    font: normal normal bold 45px/65px Anek Devanagari;
     letter-spacing: 0px;
     color: #000000;
     text-transform: uppercase;
+    opacity: 1;
 }
-p {
+.provider p {
+    top: 1114px;
+    left: 960px;
     width: 584px;
     height: 83px;
     text-align: left;
     font: normal normal normal 16px/30px Poppins;
     letter-spacing: 0px;
     color: #000000;
+    opacity: 1;
 }
-#contactButton {
-    width: 160px;
-    height: 50px;
-    background: #ff3147 0% 0% no-repeat padding-box;
-    border-radius: 2px;
-    font-size: 16px;
-    color: white;
-    border: none;
-}
-.container-Do {
-    font-family: "Cormorant SC";
-    background-color: #a8a4a4;
-
-    align-items: center;
-    height: 100vh;
-    width: 60%;
-    margin: auto;
-}
-.row {
+.provider {
     display: flex;
+    margin-left: 20%;
+}
+.container-Do .row {
+    width: 1500px;
+    display: flex;
+    gap: 1rem;
+    margin-left: 20%;
+}
+.card1 {
+    top: 1271px;
+    left: 375px;
+    width: 370px;
+    height: 526px;
+    background: transparent url("assets/1-2.png") 0% 0% no-repeat padding-box;
+    opacity: 1;
 }
 
-/* .column {
-    height: 4rem;
-    width: 14rem;
-    gap: 1.5rem;
-} */
-.icon {
-    width: 8rem;
-    height: 14rem;
-    /* UI Properties */
+.card2 {
+    top: 1271px;
+    left: 775px;
+    width: 370px;
+    height: 526px;
+
+    background: transparent url("assets/2-2.png") 0% 0% no-repeat padding-box;
+    opacity: 1;
+}
+.card3 {
+    top: 1271px;
+    left: 1175px;
+    width: 370px;
+    height: 526px;
+
+    text-align: center;
     background: #ff3147 0% 0% no-repeat padding-box;
     border-radius: 5px;
     opacity: 0.86;
 }
-.para {
-    top: 1526px;
-    left: 1200px;
-    width: 320px;
-    height: 54px;
-    /* UI Properties */
+.card3 h1 {
+    font-size: 1.5rem;
+    color: #fafafa;
+}
+.card3 p {
     text-align: center;
     font: normal normal normal 16px/30px Poppins;
     letter-spacing: 0px;
     color: #ffffff;
     opacity: 1;
 }
-img {
-    height: 14rem;
-    width: 8rem;
-}
-.resize {
-    height: 1.5rem;
-    /* width: 1.5rem; */
-}
-.button {
-    width: 6rem;
-    height: 2rem;
-    background: #932121 0% 0% no-repeat padding-box;
+.card3 button {
+    width: 185px;
+    height: 50px;
+    background: #f4f4f4 0% 0% no-repeat padding-box;
     border-radius: 2px;
     opacity: 1;
+    border: none;
+    color: #ff3147;
+    text-align: left;
 }
+.card4 {
+    top: 1271px;
+    left: 1575px;
+    width: 370px;
+    height: 526px;
+
+    background: transparent url("assets/3-2.png") 0% 0% no-repeat padding-box;
+    opacity: 1;
+}
+.dots {
+    margin-left: 20%;
+    display: flex;
+    opacity: 1;
+    gap: 1rem;
+}
+
+/* next page */
 .container-choose {
-    font-family: "Cormorant SC";
-    background-color: white;
+    height: 350px;
+    width: 1920px;
     align-items: center;
-    height: 100vh;
-    width: 60%;
-    margin: auto;
+}
+.container-choose h3 {
+    color: #ff3147;
+    text-align: center;
+}
+.container-choose h1 {
+    color: #000000;
+    text-align: center;
+    text-transform: uppercase;
+}
+.row {
+    margin-left: 20%;
+    display: flex;
+    gap: 3rem;
 }
 .column {
-    top: 2239px;
-    left: 375px;
+    width: 200px;
+    height: 200px;
+    background: 0% 0% no-repeat padding-box;
+    margin-left: 1rem;
+    opacity: 1;
+}
+.column img {
     width: 72px;
     height: 72px;
-    /* UI Properties */
-    background: transparent url("img/1.png") 0% 0% no-repeat padding-box;
     opacity: 1;
+}
+.column h4 {
+    width: 182px;
+    height: 28px;
+    text-align: left;
+    font: normal normal medium 20px/80px;
+    letter-spacing: 0px;
+    color: #000000;
+    opacity: 1;
+}
+.column p {
+    width: 200px;
+    height: 200px;
+}
+/* next page */
+.container-project {
+    height: 750px;
+    width: 1920px;
+    /* align-items: center; */
+}
+.container-project h3 {
+    color: #ff3147;
+    text-align: center;
+    text-transform: uppercase;
+}
+.container-project h1 {
+    color: #000000;
+    text-align: center;
+    text-transform: uppercase;
+}
+.our-project {
+    display: flex;
+    margin-left: 20%;
+}
+.our-project img {
+    top: 2718px;
+    left: 375px;
+    width: 770px;
+    height: 567px;
+
+    margin-left: 1rem;
+}
+.project {
+    margin-left: 1.5rem;
+    display: grid;
+    width: 325px;
+    text-align: left;
+}
+.project .genderless {
+    background-color: #d4d2d2;
+    text-align: center;
+}
+.project .strategy {
+    background-color: #ff3147;
+    text-align: center;
+}
+/* next page */
+.growts {
+    width: 1920px;
+    height: 602px;
+    background: #fafafa 0% 0% no-repeat padding-box;
+    opacity: 1;
+    text-align: center;
+}
+.growts h3 {
+    font: normal normal 600 24px/26px;
+    color: #ff3147;
+    text-transform: uppercase;
+    opacity: 1;
+}
+.growts h1 {
+    text-align: center;
+    font: normal normal bold 45px/65px Cormorant SC;
+    letter-spacing: 0px;
+    color: #000000;
+    text-transform: uppercase;
+    opacity: 1;
+}
+.experts {
+    margin-left: 22%;
+    display: flex;
+    gap: 2rem;
+}
+.experts .customers {
+    top: 3674px;
+    left: 375px;
+    width: 250px;
+    height: 233px;
+    background: #ffffff 0% 0% no-repeat padding-box;
+    box-shadow: 3px 6px 20px #672c2c1f;
+    opacity: 1;
+}
+.experts .customers h2 {
+    font-size: 50px;
+}
+.experts .customers img {
+    width: 39px;
+    height: 34px;
+}
+/* next page */
+.feedback {
+    margin-left: 28%;
+    height: 350px;
+    width: 835px;
+    text-align: center;
+}
+
+.feedback h3 {
+    font: normal normal 600 24px/26px Anek Devanagari;
+    text-transform: uppercase;
+    color: #ff3147;
+    opacity: 1;
+}
+.feedback h1 {
+    font: normal normal bold 45px/65px Anek Devanagari;
+    color: #000000;
+    text-transform: uppercase;
+    opacity: 1;
+}
+
+.feedback p {
+    background: transparent url("assets/Quotemarks-left.svg") 0% 0% no-repeat
+        padding-box;
+    font: normal normal normal 20px/34px Poppins;
+    color: #000000;
+    opacity: 1;
+    /* text-align: left; */
+}
+.feedback b {
+    color: #ff3147;
+}
+.footer {
+    width: 1920px;
+    height: 310px;
+    text-align: center;
+    background: #ff3147;
+    /* opacity: 0.81; */
+}
+.footer .img {
+    background: url("assets/NoPath - Copy.svg") no-repeat padding-box;
 }
